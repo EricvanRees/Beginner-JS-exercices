@@ -1,4 +1,4 @@
-/* 61. Write a JavaScript program to concatenate two strings except for their first charact */er. 
+/* 61. Write a JavaScript program to concatenate two strings except for their first character. */ 
 
 
 function concatStr(aStr, bStr) {
