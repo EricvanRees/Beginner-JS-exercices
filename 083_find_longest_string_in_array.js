@@ -16,4 +16,4 @@ function findLongestString(anArray) {
    } 
 }
 
-console.log(findLongestString(['aaa', 'bbbbbb', 'ccc']));
+console.log(findLongestString(['aaa', 'bbbbbb', "ccc"]));
