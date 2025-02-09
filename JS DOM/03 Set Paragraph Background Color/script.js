@@ -22,8 +22,6 @@ function changeYellow() {
   parag.style.backgroundColor = 'yellow';
 }
 
-
-
 red.addEventListener('click', changeRed);
 blue.addEventListener('click', changeBlue);
 green.addEventListener('click', changeGreen);
