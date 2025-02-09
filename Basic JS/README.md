@@ -4,14 +4,13 @@ This is a collection of small JavaScript scripts using Vanilla JavaScript. They 
 
 They include topics such as:
 
-*if/else statements
-*array methods
-*date objects
-*numbers
-*strings
-*higher-order functions
-*ternary operators
-*... and more
+1) if/else statements
+2) *array methods
+3) date objects
+4) numbers
+5) strings
+6) higher-order functions
+7) ternary operators
 
 The exercises are meant to use logic combined with basic JS syntax and formulate answers to common programming tasks.
 
