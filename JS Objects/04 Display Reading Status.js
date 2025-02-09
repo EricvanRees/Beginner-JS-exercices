@@ -20,7 +20,7 @@ const library = [
    }];
 
    let readingStatus = library.map(el => {
-    return el.readingStatus? `already read ${el.title}` : `you still need to read ${el.title};`  
+    return el.readingStatus? `already read \'${el.title}\'` : `you still need to read \'${el.title}\'`;  
    });
 
    console.log(readingStatus);
