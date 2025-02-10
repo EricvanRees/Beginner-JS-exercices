@@ -6,7 +6,12 @@ console.log(string_to_array("Robin Singh"));
 ["Robin", "Singh"] */
 
 function string_to_array(aStr) {
-  return aStr.split(" ")
+  if (typeof(aStr) === 'string') {
+    return aStr.split(" ")
+  }
+  else {
+    return false;
+  }
 }
 
 console.log(string_to_array("Robin Singh"));
