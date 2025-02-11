@@ -11,7 +11,12 @@ console.log(insert('We are doing some exercises.','JavaScript ',18));
 
 function insert(aStr, insertStr = '', par = 0) {
   let newStr = '';
-  newStr = aStr.slice(0, par) + insertStr + aStr.slice(par);
+  if (typeof(aStr) === 'string' && typeof(insertStr) === 'string' && Number.isInteger(par)) {
+    newStr = aStr.slice(0, par) + insertStr + aStr.slice(par);
+  }
+  else {
+    return false;
+  }
   return newStr;
 }
 
