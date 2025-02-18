@@ -15,14 +15,15 @@ function checkJSON(value) {
         toString.call(value) means "calling the toString method on an object named "value".
         
         [object, object] is the string representation of a JavaScript object data type. 
+        It means you are alerting an instance of an object. 
 
         When you use the toString() method on an object in JavaScript, you get the string representation – [object, object] – returned.
         
         */
-        return toString.call(value) === '[Object Object]'
+        return toString.call(value) === '[object Object]';
       }
 
-console.log(checkJSON({"name":"Adam","age":20}));
+console.log(checkJSON({name:"Adam", age:20}));
 
 console.log(checkJSON({"name":"John", "age":30, "car":null}));
 console.log(checkJSON(9090)); 
