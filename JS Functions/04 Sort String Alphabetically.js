@@ -6,7 +6,19 @@ Expected Output : 'abeemrstw'
 Assume punctuation and numbers symbols are not included in the passed string. */
 
 
-function sortString(aStr) {
+/* function sortString(aStr) {
+  if (typeof(aStr) === 'string') {
+    let myArr = aStr.split('');
+    let sortedArr = myArr.sort();
+    return sortedArr.join('');
+  }
+  else {
+    return false;
+  }
+} */
+
+// written as arrow function:
+const sortString =  aStr => {
   if (typeof(aStr) === 'string') {
     let myArr = aStr.split('');
     let sortedArr = myArr.sort();

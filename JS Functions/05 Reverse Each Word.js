@@ -4,8 +4,26 @@ Write a JavaScript function that accepts a string as a parameter and converts th
 Example string : 'the quick brown fox'
 Expected Output : 'The Quick Brown Fox ' */
 
-function capitalize(aString) {
+/* function capitalize(aString) {
 
+  let capArr = [];
+
+  if (typeof(aString) === 'string') {
+    let newArr = aString.split(' ');
+    newArr.forEach(el => {
+      let capWordsArr = el[0].toUpperCase() + el.slice(1,);
+     capArr.push(capWordsArr);
+    });
+  }
+  else {
+    return false;
+  }
+  return capArr.join(" ");
+} */
+
+// written as arrow function:
+
+const capitalize = aString => {
   let capArr = [];
 
   if (typeof(aString) === 'string') {

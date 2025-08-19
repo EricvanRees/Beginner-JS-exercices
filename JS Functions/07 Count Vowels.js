@@ -5,7 +5,22 @@ Note : As the letter 'y' can be regarded as both a vowel and a consonant, we do 
 Example string : 'The quick brown fox'
 Expected Output : 5 */
 
-function vowelcount(aStr) {
+/* function vowelcount(aStr) {
+  let count = 0;
+  let vowels = 'aeoiu';
+  for (let i = 0; i < aStr.length - 1; i++) {
+    if (vowels.includes(aStr[i])) {
+      count += 1;
+    }
+    else {
+      continue;
+    }
+  }
+  return count;
+} */
+
+// as arrow function:
+const vowelcount = aStr => {
   let count = 0;
   let vowels = 'aeoiu';
   for (let i = 0; i < aStr.length - 1; i++) {
