@@ -1,0 +1,1 @@
+export let greet = user => console.log(`Hi ${user}`); 
