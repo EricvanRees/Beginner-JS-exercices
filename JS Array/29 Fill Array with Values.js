@@ -12,10 +12,18 @@ function createStr(firstLetter, lastLetter, anInt) {
   let alphabet = "abcdefghijklmnopqrstuvwxyz";
   let arraySlice = Array.from(alphabet);
   let slicedArr = arraySlice.slice(arraySlice.indexOf(firstLetter), arraySlice.indexOf(lastLetter) + 1);
-  for (let i = 0; i < slicedArr.length; i+=anInt) {
+  /* Solution using a for loop: 
+    for (let i = 0; i < slicedArr.length; i+=anInt) {
     finalArr.push(slicedArr[i]);
   }
-  return finalArr;
+  return finalArr;   */
+  // solution using reduce():
+  return slicedArr.reduce((acc, letter, index) => {
+    if (index % anInt === 0) {
+      acc.push(letter);
+    }
+    return acc;
+  }, []);
 }
 
 console.log(createStr('a', "z", 2));
