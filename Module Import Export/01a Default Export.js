@@ -1,4 +1,1 @@
-import {greet} from './01 Default Export.js'
-
-console.log(greet("me"));
-
+export let greet = user => console.log(`Hi ${user}`); 
