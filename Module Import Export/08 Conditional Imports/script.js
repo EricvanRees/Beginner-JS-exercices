@@ -1,3 +1,7 @@
+/* 
+Write a JavaScript program that imports a specific module conditionally based on a runtime value.
+*/
+
 const myBool = true;
 
 if (myBool) {
