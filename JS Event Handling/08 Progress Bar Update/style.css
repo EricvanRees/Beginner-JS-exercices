@@ -1,0 +1,9 @@
+#myBar {
+  width: 5%;
+  height: 30px;
+  background-color: #035f26;
+  line-height: 30px;
+  text-indent: 10px;
+  color: white;
+  font-weight: bold;
+}
