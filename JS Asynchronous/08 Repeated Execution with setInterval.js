@@ -5,6 +5,8 @@ Write a JavaScript program to implement a function that executes a given functio
 const repeat = setInterval(printRandomNum, 2000);
 
 function printRandomNum() {
-  const randomNum = Math.floor(Math.random() * 10);
-  console.log(`Random number is ${randomNum}`);
+  const randomNum1 = Math.floor(Math.random() * 10);
+  const randomNum2 = Math.ceil(Math.random() * 10);
+  console.log(`First random number is ${randomNum1}`);
+  console.log(`Second random number is ${randomNum2}`);
 }
