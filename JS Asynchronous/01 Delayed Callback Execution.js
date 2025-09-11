@@ -6,6 +6,6 @@ Write a JavaScript function that takes a callback and invokes it after a delay o
 setTimeout(myF, 2000);
 
 function myF() {
-  const date = new Date();
-  console.log(`The current date is ${date}`);
+  const randomNr = Math.floor(Math.random() * 10);
+  console.log(`The random number is ${randomNr}`);
 }
