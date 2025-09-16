@@ -7,7 +7,9 @@ Output :
 "200 minutes = 3 hour(s) and 20 minute(s)."
 */
 
-// resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Duration/with
+/* balanceMinutes resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Duration/with
+named arguments resource: https://dev.to/producthackers/named-arguments-js-2d99 */
+
 function balanceMinutes(duration) {
   const { hours, minutes } = duration;
   const totalMinutes = hours * 60 + minutes;
@@ -16,11 +18,11 @@ function balanceMinutes(duration) {
   return duration.with({ hours: balancedHours, minutes: balancedMinutes });
 }
 
-function timeConvert(minutes, hours=0) {
+function timeConvert({minutes, hours=0}) {
 const d1 = Temporal.Duration.from({hours: hours, minutes: minutes });
 const d2 = balanceMinutes(d1);
 return `${minutes} minutes = ${d2.hours} hours and ${d2.minutes} minutes.`
 }
 
-console.log(timeConvert(200));
+console.log(timeConvert({minutes: 200}));
 
