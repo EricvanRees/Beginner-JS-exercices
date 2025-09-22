@@ -42,6 +42,6 @@ function formatMonthWithTemporal(year, month) {
 }
 
 // Example: print September 2025
-console.log(formatMonthWithTemporal(2025, 9));
+console.log(formatMonthWithTemporal(2025, 10));
 
 
