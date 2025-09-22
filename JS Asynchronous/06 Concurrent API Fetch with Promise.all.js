@@ -7,6 +7,13 @@ function getData(endpoint) {
     const xhr = new XMLHttpRequest();
 
     xhr.open('GET', endpoint);
+    
+    /*   readyState has 5 possible values
+    0: request not initialized
+    1: server connection established
+    2: request received
+    3: processing request
+    4: request finished and response is ready */
 
     xhr.onreadystatechange = function () {
       if (this.readyState === 4) {
@@ -17,7 +24,7 @@ function getData(endpoint) {
         }
       }
     };
-
+  // get a random amount of seconds (between 1 and 4) before calling each data call function
   setTimeout(() => {
     xhr.send();
   }, Math.floor(Math.random() * 3000) + 1000);
