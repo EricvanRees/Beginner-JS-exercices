@@ -58,5 +58,5 @@ function getPosts() {
 
 // use "then" instead of simple calling the cb function
 // pushes the third post, then loads all three posts on HTML
-createPost({ title: 'Post Three', body: 'This is post'})
+createPost({ title: 'Post Three', body: 'This is post three'})
 .then(getPosts);
