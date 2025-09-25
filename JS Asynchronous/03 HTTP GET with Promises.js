@@ -3,9 +3,10 @@ Write a JavaScript a function that makes an HTTP GET request and returns a Promi
 */
 
 function myFetch() {
-  fetch('./JSON/movies.json')
+  fetch('https://jsonplaceholder.typicode.com/comments/1')
   .then((response) => response.json())
-  .then((data) => console.log(data));
+  // only log the value of the "body" property
+  .then((data) => console.log(data.body));
 }
 
 myFetch()
