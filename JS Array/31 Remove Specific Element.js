@@ -14,7 +14,7 @@ function filterArr(anArr, anInt) {
   return result;
 }
 
-console.log(filterArr([2, 5, 9, 6], 5));
+console.log(filterArr([2, 5, 9, 6], 5)); // logs [2, 6, 9]
 
 
 

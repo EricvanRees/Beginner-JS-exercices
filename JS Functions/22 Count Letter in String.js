@@ -14,4 +14,4 @@ function countLetters(aStr, letter) {
   return newObj[letter] || 0;
 }
 
-console.log(countLetters('w3resource.com', 'o'));
+console.log(countLetters('w3resource.com', 'o')); // 2
