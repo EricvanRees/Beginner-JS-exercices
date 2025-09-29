@@ -10,12 +10,18 @@ var library = [
    ];
 */
 
-var library = [ 
+const library = [ 
    { author: 'Bill Gates', title: 'The Road Ahead', libraryID: 1254},
    { author: 'Steve Jobs', title: 'Walter Isaacson', libraryID: 4264},
    { author: 'Suzanne Collins', title: 'Mockingjay: The Final Book of The Hunger Games', libraryID: 3245}
    ];
 
 library.sort((a, b) => a.title.localeCompare(b.name));
+
+/* 
+0: {author: 'Suzanne Collins', title: 'Mockingjay: The Final Book of The Hunger Games', libraryID: 3245}
+1: {author: 'Bill Gates', title: 'The Road Ahead', libraryID: 1254}
+2: {author: 'Steve Jobs', title: 'Walter Isaacson', libraryID: 4264}
+*/
 
 console.log(library);

@@ -12,4 +12,4 @@ function contains(anArr, item) {
   return anArr.includes(item);
 }
 
-console.log(contains([2, 5, 9, 6], 5));
+console.log(contains([2, 5, 9, 6], 5)); // true

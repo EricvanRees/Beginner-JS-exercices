@@ -15,4 +15,4 @@ function fillArray(arrLength, fillVal) {
   return Array(arrLength).fill(fillVal);
 }
 
-console.log(fillArray(6, 0));
+console.log(fillArray(6, 0)); // [0, 0, 0, 0, 0, 0]

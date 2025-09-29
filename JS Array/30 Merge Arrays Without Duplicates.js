@@ -18,4 +18,4 @@ function mergeArrs(arr1, arr2) {
 
 var array1 = [1, 2, 3];
 var array2 = [2, 30, 1];
-console.log(mergeArrs(array1, array2));
+console.log(mergeArrs(array1, array2)); // [1, 2, 3, 30]
