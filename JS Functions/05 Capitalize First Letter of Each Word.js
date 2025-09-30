@@ -35,9 +35,9 @@ const capitalize = aString => {
     // loop over individual array elements...
     newArr.forEach(el => {
       // ... and capitalize the first letter of each array element and paste the remainder
-      let capWordsArr = el[0].toUpperCase() + el.slice(1,);
+      let capWord = el[0].toUpperCase() + el.slice(1,);
       // push individual capitalized words to new empty array
-      capArr.push(capWordsArr);
+      capArr.push(capWord);
     });
   }
     else {
