@@ -4,7 +4,7 @@ Write a JavaScript function that reverses a number.
 Example x = 32243;
 Expected Output : 34223 */
 
-/* function reverseNum(aNum) {
+function reverseNumber(aNum) {
   let reverseNumber = '';
   // check if number is integer
   if (Number.isInteger(aNum)) {
@@ -21,7 +21,7 @@ Expected Output : 34223 */
     return false;
   }
   return parseInt(reverseNumber);
-} */
+} 
 
   // written as arrow function:
 const reverseNum = aNum => {
@@ -43,4 +43,5 @@ const reverseNum = aNum => {
   return parseInt(reverseNumber);
 }
 
-console.log(reverseNum(6789));
+console.log(reverseNum(6789)); // logs 9876
+console.log(reverseNumber(6789)); // logs 9876
