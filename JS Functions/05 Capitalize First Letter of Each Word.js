@@ -26,17 +26,21 @@ Expected Output : 'The Quick Brown Fox ' */
 const capitalize = aString => {
   let capArr = [];
 
-  if (typeof(aString) === 'string') {
-    let newArr = aString.split(' ');
+  if (typeof(aString) === 'string') {    
+    let newArr = aString.split(' '); // logs ['the', 'quick', 'brown', 'fox']
+    // loop over individual array elements...
     newArr.forEach(el => {
+      // ... and capitalize the first letter of each array element and paste the remainder
       let capWordsArr = el[0].toUpperCase() + el.slice(1,);
-     capArr.push(capWordsArr);
+      // push individual capitalized words to new empty array
+      capArr.push(capWordsArr);
     });
   }
-  else {
-    return false;
-  }
-  return capArr.join(" ");
+    else {
+      return false;
+    }
+    // convert individual array words back to string
+    return capArr.join(" ");
 }
 
 console.log(capitalize('the quick brown fox'));
