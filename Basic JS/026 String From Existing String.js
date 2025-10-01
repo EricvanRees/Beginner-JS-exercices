@@ -11,4 +11,4 @@ function strThree(aString) {
   }
 }
 
-console.log(strThree('week'));
+console.log(strThree('week')); // logs "eekweekeek" (=  "eek" + week" + "eek")

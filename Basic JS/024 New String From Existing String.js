@@ -10,5 +10,5 @@ function addChars(aString) {
   }
 }
 
-console.log(addChars('vino tinto'));
-console.log(addChars('cafe con leche'));
+console.log(addChars('vino tinto')); // vvino tintov
+console.log(addChars('cafe con leche')); // ccafe con lechec

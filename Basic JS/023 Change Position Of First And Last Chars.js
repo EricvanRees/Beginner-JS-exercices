@@ -12,5 +12,5 @@ function rewriteStr(aString) {
   }
 }
 
-console.log(rewriteStr('vino tinto'));
-console.log(rewriteStr('cafe con leche'));
+console.log(rewriteStr('vino tinto')); // logs "oino tintv"
+console.log(rewriteStr('cafe con leche')); // logs "eafe con lechc"

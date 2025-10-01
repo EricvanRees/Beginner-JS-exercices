@@ -9,5 +9,5 @@ function removeChar(aString, aNumber) {
   }
 }
 
-console.log(removeChar("havermelk", 1));
-console.log(removeChar("week", 2));
+console.log(removeChar("havermelk", 1)); // logs "hvermelk"
+console.log(removeChar("week", 2)); // logs "wek"

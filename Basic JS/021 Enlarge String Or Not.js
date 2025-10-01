@@ -14,5 +14,5 @@ function rewrite(a) {
   }
 }
 
-console.log(rewrite("PyPyPy"));  
-console.log((rewrite("hovercraft")));
+console.log(rewrite("PyPyPy"));  // logs "PyPyPy"
+console.log((rewrite("hovercraft"))); // logs "Pyhovercraft"
