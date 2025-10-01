@@ -13,5 +13,5 @@ function diff(a) {
   }
 }
 
-console.log(diff(3));
-console.log(diff(45));
+console.log(diff(3)); // 16
+console.log(diff(45)); // 45 - 19 = 26. 26 * 3 = 78

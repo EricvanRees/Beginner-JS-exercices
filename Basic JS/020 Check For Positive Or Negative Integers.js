@@ -9,7 +9,7 @@ function check(a, b) {
   }
 }
 
-console.log(check(4, -4));
-console.log(check(-4, 4));
-console.log(check(1, 4));
-console.log(check(-4, -5));
+console.log(check(4, -4)); // true
+console.log(check(-4, 4)); // true
+console.log(check(1, 4)); // false
+console.log(check(-4, -5)); // false

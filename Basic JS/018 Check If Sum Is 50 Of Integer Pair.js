@@ -9,5 +9,6 @@ function check(a, b) {
   }
 }
 
-console.log(check(50, 40));
-console.log(check(25, 20));
+console.log(check(50, 40)); // true
+console.log(check(25, 20)); // false
+console.log(check(25, 25)); // true

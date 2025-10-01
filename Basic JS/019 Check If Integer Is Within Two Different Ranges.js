@@ -9,7 +9,7 @@ function check(x) {
   }
 }
 
-console.log(check(119));
-console.log(check(81));
-console.log(check(300));
-console.log(check(600)); 
+console.log(check(119)); // true
+console.log(check(81)); // true
+console.log(check(300)); // false
+console.log(check(600)); // false

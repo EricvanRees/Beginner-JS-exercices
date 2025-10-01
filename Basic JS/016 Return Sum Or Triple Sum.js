@@ -13,5 +13,5 @@ function sum(a, b) {
   }
 }
 
-console.log(sum(1, 1))
-console.log(sum(2, 4));
+console.log(sum(1, 1)) // 1 + 1 = 2. 2 * 3 = 6
+console.log(sum(2, 4)); // 2 + 4 = 6
