@@ -9,6 +9,6 @@ function checkDigits(a, b, c) {
   return Number(lastDigitA) === Number(lastDigitB) || Number(lastDigitB) === Number(lastDigitC) || Number(lastDigitA) === Number(lastDigitC) ? true : false;
 }
 
-
-console.log(checkDigits(3.900, 3.999, 4.000));
-console.log(checkDigits(3.9, 3.9, 4.0));
+console.log(checkDigits(3.900, 3.999, 4.000)); // true
+console.log(checkDigits(3.9, 3.9, 4.0)); // true
+console.log(checkDigits(4.5, 4.6, 4.8)); // false

@@ -18,4 +18,4 @@ function letterCount(myStr) {
   return (tCount === pCount)? 'equal number of P\'s and T\'s' : 'not equal';
 }
 
-console.log(letterCount(myStr));
+console.log(letterCount(myStr)); // logs "equal number of P's and T's"

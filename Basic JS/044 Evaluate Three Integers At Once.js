@@ -9,7 +9,7 @@ function evaluateInts(a, b, c) {
   }
 }
 
-console.log(evaluateInts(21, 22, 23));
-console.log(evaluateInts(18, 19, 1));
-console.log(evaluateInts(19, 19, 19));
-console.log(evaluateInts(20, 20, 20));
+console.log(evaluateInts(21, 22, 23)); // true
+console.log(evaluateInts(18, 19, 1)); // false
+console.log(evaluateInts(19, 19, 19)); // false 
+console.log(evaluateInts(20, 20, 20)); // false

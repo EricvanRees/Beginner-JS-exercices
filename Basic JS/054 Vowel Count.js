@@ -18,4 +18,5 @@ function countVowels(aStr) {
   }
 }
 
-console.log(countVowels("This is a very long string with a bunch of vowels"));
+// logs "This string includes 12 vowels"
+console.log(countVowels("This is a very long string with a bunch of vowels")); 
