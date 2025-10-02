@@ -7,7 +7,7 @@ const getUser = new Promise((resolve, reject) => {
     let error = true;
 
     if (!error) {
-      resolve({name: 'Eric', age: 45});
+      resolve({name: 'Joe', age: 25});
     } else {
       reject('Error: something went wrong')
     }

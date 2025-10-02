@@ -1,13 +1,28 @@
 /* 1. Write a JavaScript function that returns a Promise that resolves with a "Hello, World!" message after 1 second. */
 
 let myPromise = new Promise(function(myResolve, myReject) {
-  // create 20 random numbers, then resolve promise with a delay of 1 sec and print a message
-  for (let i = 0; i <= 20; i++) {
-    console.log(`Random number is ${Math.floor(Math.random() * 10)}`);
+  try {
+    // 1. producing code
+    // create 20 random numbers
+    for (let i = 0; i <= 20; i++) {
+      let randomNum = Math.floor(Math.random() * 10);
+      console.log(`Random number is ${randomNum}`);
+      if (randomNum === 3) {
+      throw new Error("Random number 3 encountered. Rejecting promise...");
+    }
   }
   myResolve(); 
-}).then(
-  function() {
+
+} catch (err) {
+  // Reject Promise if any error occurs
+  myReject(err);
+}
+  // 2. consuming code
+}).then(function() {
     setTimeout(()=> { console.log("Hello World!");
     }, 1000)
   })
+.catch(function(error) {
+  console.log('Promise rejected:', error.message);
+});
+
