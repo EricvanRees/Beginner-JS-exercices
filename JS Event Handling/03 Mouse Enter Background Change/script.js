@@ -1,5 +1,5 @@
 
- const mydiv = document.querySelector("div");
+const mydiv = document.querySelector("div");
 
 function myFunction() {
  document.body.style.backgroundColor = "black";
