@@ -19,9 +19,10 @@ const library = [
        readingStatus: false
    }];
 
-   let readingStatus = library.map(el => {
+const readingStatus = library.map(el => {
     return el.readingStatus? `already read \'${el.title}\'` : `you still need to read \'${el.title}\'`;  
-   });
+});
 
-   console.log(readingStatus);
+// logs ["already read 'The Road Ahead'", "already read 'Walter Isaacson'", "you still need to read 'Mockingjay: The Final Book of The Hunger Games'"]
+console.log(readingStatus);
 
