@@ -22,5 +22,5 @@ const myPromise3 = new Promise((resolve, reject) => {
 const myPromises = [myPromise1, myPromise2, myPromise3];
 // Promise.any ONLY handles the first successfully resolved Promise, which is myPromise1
 Promise.any(myPromises)
-.then((res) => console.log(res))
+.then((res) => console.log(res)) // logs "Async task 1"
 .catch((err) => console.log("Error!"));

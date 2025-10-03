@@ -21,6 +21,12 @@ const myPromise3 = new Promise((resolve, reject) => {
 
 const myPromises = [myPromise1, myPromise2, myPromise3];
 // Promise.allSettled() all results are returned from all Promises(), whether they're successfull or not (such as myPromise3)
+
 Promise.allSettled(myPromises)
 .then((res) => console.log(res))
+/* logs the following: 
+0: {status: 'fulfilled', value: 'Async task 1'}
+1: {status: 'fulfilled', value: 'Async task 2'}
+2: {status: 'rejected', reason: 'Async task 3'} 
+*/
 .catch((err) => console.log("Error!"));
