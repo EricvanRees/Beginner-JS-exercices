@@ -8,8 +8,9 @@ Output : The sign is -
 
 function findSign(...args) {
   const sum = args.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-  return sum >= 0 ? "+" : "-";
+  const output = sum >= 0 ? "+" : "-";
+  alert(`The sign is ${output}`);
 }
 
-console.log(findSign(5,4,6,7));
-console.log(findSign(-9, -7));
+console.log(findSign(5,4,6,7)); // The sign is +
+console.log(findSign(-9, -7)); // The sign is -

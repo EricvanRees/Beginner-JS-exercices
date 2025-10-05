@@ -12,7 +12,7 @@ function sortNums(num1, num2, num3) {
   return answer.sort().reverse();
 }
 
-console.log(sortNums(1,2,3));
-console.log(sortNums(4,5,6));
-console.log(sortNums(7,8,9));
-console.log(sortNums(8, 4, 2));
+console.log(sortNums(1,2,3)); // [3, 2, 1]
+console.log(sortNums(4,5,6)); // [6, 5, 4]
+console.log(sortNums(7,8,9)); // [9, 8, 7]
+console.log(sortNums(8, 4, 2)); //  [8, 4, 2]
